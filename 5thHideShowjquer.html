@@ -1,0 +1,58 @@
+<html>
+    <style>
+    #para{
+        font-family: 'Times New Roman', Times, serif;
+        color: blue;
+   height: 2px;
+    }
+    
+    
+    </style>
+    <body>
+
+<p id="para">I am studying engineering I am studying engineering I am studying engineering I am studying engineering<br>I am studying engineering<br></p>
+<div id="li">
+    <ul>
+        <li>fifth</li>
+        <li>fourth</li>
+        <li>third</li>
+        <li>second</li>
+        <li>first</li>
+    </ul>
+</div>
+<div id="box" style="background:#98bf21;height:100px;width:100px;margin:6px;"></div>
+<button id="but" type="submit">click me</button>
+<script src="jq\jquery-3.4.1.js"></script>
+<script>
+/*$("#but").click(function(){
+$("#para").hide();
+})*/
+
+/*$("#but").click(function(){
+$("#para").show();
+})*/
+
+/*$("#but").click(function(){
+$("#para").toggle();
+})*/
+
+/*$("#but").click(function(){
+$("#para").slideUp(4000);
+})*/
+
+/*$("#but").click(function(){
+$("#para").slideDown();
+})*/
+
+/*$("#but").click(function(){
+$("#para").slideToggle("slow");//can be slow,fast or milliseconds
+})*/
+$(document).ready(function(){
+$("#but").click(function(){
+    $("#box").animate({height: "300px"});
+})
+})
+</script>
+
+    </body>
+</html>

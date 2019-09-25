@@ -1,0 +1,52 @@
+<html>
+    <style>
+    #para{
+        font-family: 'Times New Roman', Times, serif;
+        color: blue;
+   height: 2px;
+    }
+    
+    
+    </style>
+    <body>
+
+<div id="li">
+    <ul>
+        <li>fifth</li>
+        <li>fourth</li>
+        <li>third</li>
+        <li>second</li>
+        <li>first</li>
+    </ul>
+</div>
+<div id="box" style="background:#98bf21;height:100px;width:100px;margin:6px;"></div>
+<button id="but" type="submit">click me</button>
+<script src="jq\jquery-3.4.1.js"></script>
+<script>
+   /* $("#but").click(function(){
+alert($("#li").text());
+    });*/
+
+   /* $("#but").click(function(){
+alert($("#li").html());
+    });//displays with tags*/
+   /* $("#but").click(function(){
+alert($("#box").attr("style"));
+    });*/
+
+   /* $("#but").click(function(){
+alert($("#box").attr("id","panlam"));
+    });*/
+
+  /*  $("#but").click(function(){
+alert($("#box").css("height"));
+    });//displays value of css attribute
+*/
+    
+    $("#but").click(function(){
+$("#box").css("height","200px");
+    });//change css attribute height
+</script>
+
+    </body>
+</html>

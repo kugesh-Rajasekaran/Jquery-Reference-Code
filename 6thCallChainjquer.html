@@ -1,0 +1,44 @@
+<html>
+    <style>
+    #para{
+        font-family: 'Times New Roman', Times, serif;
+        color: blue;
+   height: 2px;
+    }
+    
+    
+    </style>
+    <body>
+
+<div id="li">
+    <ul>
+        <li>fifth</li>
+        <li>fourth</li>
+        <li>third</li>
+        <li>second</li>
+        <li>first</li>
+    </ul>
+</div>
+<div id="box" style="background:#98bf21;height:100px;width:100px;margin:6px;"></div>
+<button id="but" type="submit">click me</button>
+<script src="jq\jquery-3.4.1.js"></script>
+<script>
+/*$("#but").click(function(){
+    $("#li").fadeOut(6000);
+    alert("done");
+})//before fadeout the alert box will execute so callback is used
+*/
+/*$("#but").click(function(){
+    $("#li").fadeOut(3000,function(){
+        alert("done");
+    });
+   
+})//callback*/
+$("#but").click(function(){
+    $("li").fadeOut(2000).fadeIn(2000).slideUp();
+   
+})//chaining
+</script>
+
+    </body>
+</html>

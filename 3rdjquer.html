@@ -1,0 +1,38 @@
+<html>
+    <body>
+<script src="jq\jquery-3.4.1.js"></script>
+<p id="para">I am studying engineering</p>
+<div id="li">
+    <ul>
+        <li>fifth</li>
+        <li>fourth</li>
+        <li>third</li>
+        <li>second</li>
+        <li>first</li>
+    </ul>
+</div>
+
+<button id="but" type="submit">click me</button>
+<script>
+/*$("#but").click(fun);
+function fun(){
+
+$("#li").fadeToggle(1000);
+
+}*/
+
+$("document").ready(function(){
+
+$("#but").click(function(){
+
+    $("#li").fadeToggle(1000);
+})
+
+
+})
+
+
+</script>
+
+    </body>
+</html>

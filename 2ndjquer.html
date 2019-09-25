@@ -1,0 +1,54 @@
+<html>
+    <body>
+        <script src="jq\jquery-3.4.1.js">
+            </script>
+<style>
+
+p{
+    color: red;
+}
+li{
+    color: blue;
+    border: 2px solid black;
+    padding: 1px;
+}
+
+</style>
+            <p>paragraph</p>
+            <div class="division">
+                <ul>
+                    <li>first</li>
+                    <li>second</li>
+                    <li>third</li>
+                    <li>fourth</li>
+                </ul>
+                <p>
+                paragraph inside division
+                </p>
+            </div>
+
+            <div class="division">
+                <ul>
+                    <li>first</li>
+                    <li>second</li>
+                    <li>third</li>
+                    <li>fourth</li>
+                </ul>
+                <p>
+                paragraph inside division
+                </p>
+            </div>
+<input type="submit" onclick="fun()">
+            <script>
+            function fun(){
+            //$("p,div").fadeToggle(1000);
+            //$("div>p").fadeToggle(1000);
+             //$("div p").fadeToggle(1000);//same as above
+           //  $(".division").fadeToggle(1000);
+            
+        //$("li:even").fadeToggle(3000);
+        $(".division:odd").fadeToggle(3000);
+        }
+            </script>
+    </body>
+</html>
