@@ -1,2 +1,2 @@
-# jquer
-about jquery reference codes
+# jquery
+jquery reference codes (practise codes)
